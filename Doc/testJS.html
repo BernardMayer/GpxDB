@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- <link rel="stylesheet" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/coordonneesgps.css" type="text/css"> -->
+<style type="text/css">
+.spanDMSDMS {
+	display: block; 
+	float: left; 
+	width: 7em;
+}
+.inputDMSDMS {
+	width: 23em;
+}
+.gm-style {
+	font: 400 11px Roboto, Arial, sans-serif;
+	text-decoration: none;
+}
+.gm-style img {
+	max-width: none; 
+}
+</style>
+<!-- <script type="text/javascript" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/osd.js"></script> -->
+<script>
+function initialize() {
+}
+if ( window.self !== window.top ) {
+	window.top.location.href=window.location.href;
+}
+function splitLatLon() {
+	/*console.log("Hello, World !");*/
+	var sLatLon = document.getElementById('inputLatLon').value;
+	sLatLon = sLatLon.replace(/°|,|\'|\"/gi, "");
+	/*console.log("sLatLon=[" + sLatLon + "]");*/
+	var tabLatLon = sLatLon.split(" ");
+	/*document.getElementById('latDG').innerHTML = tabLatLon[0];
+	document.getElementById('latMI').innerHTML = tabLatLon[1];
+	document.getElementById('latSS').innerHTML = tabLatLon[2];
+	document.getElementById('latNS').innerHTML = tabLatLon[3].toUpperCase();*/
+	document.getElementById('inputLat').value = tabLatLon[0] + "° " + tabLatLon[1] + "' " + tabLatLon[2] + "'' " + tabLatLon[3]
+	var latDD = Number(tabLatLon[0]) + (Number(tabLatLon[1] / 60)) + (Number(tabLatLon[2] / 3600));
+	if (tabLatLon[3] == "S" ) {
+		latDD = -latDD;
+	}
+	/*document.getElementById('lonDD').innerHTML = latDD;
+	document.getElementById('lonDG').innerHTML = tabLatLon[4];
+	document.getElementById('lonMI').innerHTML = tabLatLon[5];
+	document.getElementById('lonSS').innerHTML = tabLatLon[6];
+	document.getElementById('lonEW').innerHTML = tabLatLon[7].toUpperCase();*/
+	document.getElementById('inputLon').value = tabLatLon[4] + "° " + tabLatLon[5] + "' " + tabLatLon[6] + "'' " + tabLatLon[7]
+	var lonDD = Number(tabLatLon[4]) + (Number(tabLatLon[5] / 60)) + (Number(tabLatLon[6] / 3600));
+	if (tabLatLon[7] == "W" ) {
+		lonDD = -lonDD;
+	}
+	document.getElementById('latDD').innerHTML = latDD;
+	document.getElementById('lonDD').innerHTML = lonDD;
+	document.getElementById('latlonDD').innerHTML = latDD + " " + lonDD;
+	document.getElementById('toCopyDD').innerHTML = document.getElementById('latlonDD').innerHTML;
+	// Copier dans le presse papier
+	//var zoneAcopier = document.getElementById('toCopyDD');
+	document.getElementById('toCopyDD').select();
+	document.execCommand('copy');
+	return false;
+}
+
+function splitLatLonDD() {
+	var sLatLon = document.getElementById('inputLatLonDD').value;
+	var tabLatLon = sLatLon.split(" ");
+	document.getElementById('latDMS').innerHTML = tabLatLon[0];
+	document.getElementById('lonDMS').innerHTML = tabLatLon[1];
+	if (isNaN(tabLatLon[0])) {
+		console.log("Pb avec " + sLatLon);
+	}
+	else {
+		if (isNaN(tabLatLon[1])) {
+			var sLatLonDMS = ddToDms(tabLatLon[0], 0);
+			var aLatLonDMS = sLatLonDMS.split("|");
+			document.getElementById('latDMS').innerHTML = aLatLonDMS[0];
+			document.getElementById('lonDMS').innerHTML = "";
+		}
+		else {
+			var sLatLonDMS = ddToDms(tabLatLon[0], tabLatLon[1]);
+			var aLatLonDMS = sLatLonDMS.split("|");
+			document.getElementById('latDMS').innerHTML = aLatLonDMS[0];
+			document.getElementById('lonDMS').innerHTML = aLatLonDMS[1];
+			
+		}
+		document.getElementById('latlonDMS').innerHTML = sLatLonDMS.replace("|", " ");
+		document.getElementById('toCopyDMS').innerHTML = document.getElementById('latlonDMS').innerHTML;
+		// Copier dans le presse papier
+		document.getElementById('toCopyDMS').select();
+		document.execCommand('copy');
+
+	}
+}
+
+function ddToDms(lat, lng) {
+	/* http://en.marnoto.com/2014/04/converter-coordenadas-gps.html */
+	var lat = lat;
+	var lng = lng;
+	var latResult, lngResult, dmsResult;
+	lat = parseFloat(lat);  
+	lng = parseFloat(lng);
+	latResult = getDms(lat);
+	latResult += (lat >= 0)? 'N' : 'S';
+	// Call to getDms(lat) function for the coordinates of Latitude in DMS.
+	// The result is stored in latResult variable.
+	lngResult = getDms(lng);
+	lngResult += (lng >= 0)? 'E' : 'W';
+	// Call to getDms(lng) function for the coordinates of Longitude in DMS.
+	// The result is stored in lngResult variable.
+	// Joining both variables and separate them with a space.
+	dmsResult = latResult + "|" + lngResult;
+	// Return the resultant string
+	return dmsResult;
+}
+function getDms(val) {
+  var valDeg, valMin, valSec, result;
+  val = Math.abs(val);
+  valDeg = Math.floor(val);
+  result = valDeg + "º ";
+  valMin = Math.floor((val - valDeg) * 60);
+  result += valMin + "' ";
+  valSec = Math.round((val - valDeg - valMin / 60) * 3600 * 1000) / 1000;
+  //valSec = Math.round((val - valDeg - valMin / 60) * 3600 * 1000) / 1000;
+  //console.log((val - valDeg - valMin / 60) * 3600);
+  result += valSec + "'' ";
+  return result;
+}
+</script>
+<!-- <link rel="icon" type="image/x-icon" href="https://www.coordonnees-gps.fr/favicon.ico?v1"> -->
+<title>Conv coord</title>
+</head>
+
+<body onload="initialize();">
+
+<fieldset><legend>DMS vers DD</legend>
+<!-- <h4>DMS vers DD</h4> -->
+<form>
+<p>
+Fournir le WP sous la forme &laquo;DD MM SS.ss [N|S] DD MM SS.ss [E|W]&raquo;<br />
+<!-- Il sera converti en DD suivant la formule &laquo;DD = d + (min/60) + (sec/3600)&raquo; -->
+Par ex. 47&deg; 29' 42.22'' N, 2&deg; 30' 37.04'' W
+</p>
+<!-- <pre>! Varlingue	47&deg; 29' 42.22'' N, 2&deg; 30' 37.04'' W	47.4950611 -2.510288888888889</pre> -->
+<div>
+<label for="inputLatLon" class="spanDMSDMS" style="">DMS Lat + Lon</label>
+<input id="inputLatLon" name="" type="textbox" class="inputDMSDMS" onkeyup="splitLatLon()" value="" style="">
+<!-- <div>
+0:<span id="latDG"></span>&nbsp;1:<span id="latMI"></span>&nbsp;2:<span id="latSS"></span>&nbsp;3:<span id="latNS"></span>&nbsp;<br />
+4:<span id="lonDG"></span>&nbsp;5:<span id="lonMI"></span>&nbsp;6:<span id="lonSS"></span>&nbsp;7:<span id="lonEW"></span>
+</div> -->
+</div>
+
+<div>
+<label for="inputLat"  class="spanDMSDMS" style="">DMS Lat</label>
+<input id="inputLat" name="" type="textbox" class="inputDMSDMS" onkeyup="splitLat()" value="" style="">
+</div>
+<div>
+<label for="inputLon"  class="spanDMSDMS" style="">DMS Lon</label>
+<input id="inputLon" name="" type="textbox" class="inputDMSDMS" onkeyup="splitLon()" value="" style="">
+</div>
+<div>
+DD --&gt; [<span id="latlonDD"></span>]&nbsp;[<span id="latDD"></span>]&nbsp;[<span id="lonDD"></span>]<br />
+<textarea id="toCopyDD"></textarea>
+</div>
+</form>
+</fieldset>
+
+<fieldset><legend>DD vers DMS</legend>
+<!-- <h4>DMS vers DD</h4> -->
+<form>
+<p>
+Fournir le WP sous la forme &laquo;[-]DD.ddddddd [-]DD.ddddddd&raquo;<br />
+Par ex. 47.4950611 -2.510288888888889
+</p>
+<!-- <pre>! Varlingue	47&deg; 29' 42.22'' N, 2&deg; 30' 37.04'' W	47.4950611 -2.510288888888889</pre> -->
+<div>
+<label for="inputLatLonDD" class="spanDMSDMS" style="">DD Lat + Lon</label>
+<input id="inputLatLonDD" name="" type="textbox" class="inputDMSDMS" onkeyup="splitLatLonDD()" value="" style="">
+</div>
+<div>
+DMS --&gt; [<span id="latlonDMS"></span>]&nbsp;[<span id="latDMS"></span>]&nbsp;[<span id="lonDMS"></span>]<br />
+<textarea id="toCopyDMS"></textarea>
+</div>
+</form>
+</fieldset>
+
+
+
+<!-- <form class="form-horizontal" role="form">
+<h4>DD (degr&eacute;s d&eacute;cimaux)*</h4>
+<div class="form-group">
+<label class="col-md-3 control-label" for="latitude">Latitude</label>
+<div class="col-md-9"><input id="latitude" class="form-control" onkeyup="ddversdms()" value="48.862725" type="textbox">
+</div>
+</div><div class="form-group">
+<label class="col-md-3 control-label" for="longitude">Longitude</label>
+<div class="col-md-9"><input id="longitude" class="form-control" onkeyup="ddversdms()" value="2.287592" type="textbox">
+</div>
+</div>
+</form>
+
+<form class="form-horizontal" role="form">
+<h4>DMS (degr&eacute;s, minutes, secondes)*</h4>
+<div class="form-group">
+<label class="col-md-3 control-label" for="latitude">Latitude</label>
+<div class="col-md-9">
+<label class="radio-inline"><input name="latnordsud" value="nord" id="nord" onclick="dmsversdd()" checked="checked" type="radio"> N </label>
+<label class="radio-inline"><input name="latnordsud" value="sud" id="sud" onclick="dmsversdd()" type="radio"> S </label>
+<input class="form-control sexagesimal" id="latitude_degres" onkeyup="dmsversdd()" value="48" type="textbox">
+<label for="latitude_degres">&deg;</label>
+<input class="form-control sexagesimal" id="latitude_minutes" onkeyup="dmsversdd()" value="51" type="textbox">
+<label for="latitude_minutes">'</label>
+<input class="form-control sexagesimalsec" id="latitude_secondes" onkeyup="dmsversdd()" value="45.81" type="textbox">
+<label for="latitude_secondes">''</label>
+</div>
+</div>
+<div class="form-group">
+<label class="col-md-3 control-label" for="longitude">Longitude</label>
+<div class="col-md-9">
+<label class="radio-inline"><input name="lngestouest" value="est" id="est" onclick="dmsversdd()" checked="checked" type="radio"> E </label>
+<label class="radio-inline"><input name="lngestouest" value="ouest" id="ouest" onclick="dmsversdd()" type="radio"> O </label>
+<input class="form-control sexagesimal" id="longitude_degres" onkeyup="dmsversdd()" value="2" type="textbox">
+<label for="longitude_degres">&deg;</label>
+<input class="form-control sexagesimal" id="longitude_minutes" onkeyup="dmsversdd()" value="17" type="textbox">
+<label for="longitude_minutes">'</label>
+<input class="form-control sexagesimalsec" id="longitude_secondes" onkeyup="dmsversdd()" value="15.331" type="textbox">
+<label for="longitude_secondes">''</label>
+</div>
+</div>
+</form> -->
+
+</body>
+</html>

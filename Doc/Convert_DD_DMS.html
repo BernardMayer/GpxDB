@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style>
+<style type="text/css">.gm-control-active img,.gm-svpc img{box-sizing:content-box}.gm-control-active:hover img:nth-child(1),.gm-control-active:active img:nth-child(1),.gm-control-active:active img:nth-child(2){display:none}</style>
+<style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style>
+<style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}</style>
+<style type="text/css">.gm-style .gm-style-iw{font-weight:300;font-size:13px;overflow:hidden}.gm-style .gm-iw{color:#2c2c2c}.gm-style .gm-iw b{font-weight:400}.gm-style .gm-iw a:link,.gm-style .gm-iw a:visited{color:#4272db;text-decoration:none}.gm-style .gm-iw a:hover{color:#4272db;text-decoration:underline}.gm-style .gm-iw .gm-title{font-weight:400;margin-bottom:1px}.gm-style .gm-iw .gm-basicinfo{line-height:18px;padding-bottom:12px}.gm-style .gm-iw .gm-website{padding-top:6px}.gm-style .gm-iw .gm-photos{padding-bottom:8px;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.gm-style .gm-iw .gm-sv,.gm-style .gm-iw .gm-ph{cursor:pointer;height:50px;width:100px;position:relative;overflow:hidden}.gm-style .gm-iw .gm-sv{padding-right:4px}.gm-style .gm-iw .gm-wsv{cursor:pointer;position:relative;overflow:hidden}.gm-style .gm-iw .gm-sv-label,.gm-style .gm-iw .gm-ph-label{cursor:pointer;position:absolute;bottom:6px;color:#fff;font-weight:400;text-shadow:rgba(0,0,0,0.7) 0 1px 4px;font-size:12px}.gm-style .gm-iw .gm-stars-b,.gm-style .gm-iw .gm-stars-f{height:13px;font-size:0}.gm-style .gm-iw .gm-stars-b{position:relative;background-position:0 0;width:65px;top:3px;margin:0 5px}.gm-style .gm-iw .gm-rev{line-height:20px;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.gm-style.gm-china .gm-iw .gm-rev{display:none}.gm-style .gm-iw .gm-numeric-rev{font-size:16px;color:#dd4b39;font-weight:400}.gm-style .gm-iw.gm-transit{margin-left:15px}.gm-style .gm-iw.gm-transit td{vertical-align:top}.gm-style .gm-iw.gm-transit .gm-time{white-space:nowrap;color:#676767;font-weight:bold}.gm-style .gm-iw.gm-transit img{width:15px;height:15px;margin:1px 5px 0 -20px;float:left}
+.gm-iw {text-align:left;}.gm-iw .gm-numeric-rev {float:left;}.gm-iw .gm-photos,.gm-iw .gm-rev {direction:ltr;}.gm-iw .gm-stars-f, .gm-iw .gm-stars-b {background:url("https://maps.gstatic.com/mapfiles/api-3/images/review_stars.png") no-repeat;background-size: 65px 26px;float:left;}.gm-iw .gm-stars-f {background-position:left -13px;}.gm-iw .gm-sv-label,.gm-iw .gm-ph-label {left: 4px;}</style><link type="text/css" rel="stylesheet" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/css.css"><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style>
+<link rel="canonical" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/conversion-coordonnees-gps_004.htm">
+<link href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/css_002.css" rel="stylesheet" type="text/css"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="description" content="Conversion de coordonnées GPS | App la plus pratique pour convertir la latitude et la Longitude en format sexagésimal et décimal.">
+<title>Conversion de coordonnées GPS | Conversion latitude longitude</title>
+<link rel="stylesheet" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/maps.css" type="text/css">
+<link rel="stylesheet" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/coordonneesgps.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="https://www.coordonnees-gps.fr/favicon.ico?v1">
+<link rel="apple-touch-icon" href="https://www.coordonnees-gps.fr/apple-touch-icon.png?v1">
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/cbgapi.loaded_1" async=""></script>
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/cbgapi.loaded_0" async=""></script>
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/osd.js"></script>
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/ca-pub-9379737428903517.js"></script>
+<script type="text/javascript" async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/plusone.js" gapi_processed="true"></script>
+<script id="twitter-wjs" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/widgets.js"></script>
+<script async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/analytics.js"></script><script>var loaderUrl = "/images/loader.gif";</script>
+<script>
+	if ( window.self !== window.top ) {
+		window.top.location.href=window.location.href;
+	}
+</script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/js"></script>
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/0ee3cec.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27566489-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<link rel="preload" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/integrator.js">
+<script type="text/javascript" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/integrator.js"></script>
+<link rel="preload" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/integrator_002.js">
+<script type="text/javascript" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/integrator_002.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/common.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/util.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/infowindow.js"></script>
+<script type="text/javascript" charset="utf-8" async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/button.js"></script>
+<link rel="stylesheet" type="text/css" href="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/light-bottom.css">
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/controls.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/places_impl.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/geocoder.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/map.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/marker.js"></script>
+<style type="text/css">
+.gm-style {
+	font: 400 11px Roboto, Arial, sans-serif;
+	text-decoration: none;
+}
+.gm-style img {
+	max-width: none; 
+}</style>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/onion.js"></script>
+<script type="text/javascript" charset="UTF-8" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/stats.js"></script>
+</head>
+
+<body onload="initialize();">
+<div class="cc_banner-wrapper ">
+<div class="cc_banner cc_container cc_container--open">
+<a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">OK!</a>
+<p class="cc_message">En
+ poursuivant votre navigation, vous acceptez l'utilisation, de notre 
+part et de tiers, de cookies à des fins de statistiques, 
+personnalisation des contenus, partage sur les réseaux sociaux, mesure 
+d'audience, profilage et publicité ciblée. 
+<a data-cc-if="options.link" class="cc_more_info" href="http://www.coordonnees-gps.fr/privacy">En savoir plus</a>
+</p>
+<a class="cc_logo" target="_blank" href="http://silktide.com/cookieconsent">Cookie Consent plugin for the EU cookie law</a>
+</div>
+</div>
+<!-- Wrap all page content here -->
+<div id="wrap">
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header pull-right">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
+<span class="icon-bar"></span><span class="icon-bar"></span>
+</button>
+</div>
+<div class="social pull-right">
+<div class="twitter pull-right">
+<iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 63px; height: 20px;" title="Twitter Follow Button" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/follow_button.htm" data-screen-name="gpscoord" frameborder="0"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+<iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/tweet_button.htm" frameborder="0"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+</div>
+<div id="plus-one" class="pull-right">
+<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px;" id="___plusone_0">
+<iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" id="I0_1534854020190" name="I0_1534854020190" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/fastbutton.htm" data-gapiattached="true" title="G+" width="100%" frameborder="0"></iframe>
+</div>
+</div>
+</div>
+<div class="clearfix">
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav nav-tabs">
+<li><a href="https://www.coordonnees-gps.fr/">Accueil</a></li>
+<li><a href="https://www.coordonnees-gps.fr/itineraire">Itinéraire</a></li>
+<li class="active"><a href="https://www.coordonnees-gps.fr/conversion-coordonnees-gps">Conversion</a></li>
+<li><a href="https://www.coordonnees-gps.fr/ma-position">Ma Position</a></li>
+<li><a href="https://www.coordonnees-gps.fr/street-view" title="Street View">Street View</a></li>
+<li><a href="https://www.coordonnees-gps.fr/gps">GPS</a></li>
+<li><a href="https://www.coordonnees-gps.fr/carte/pays">Cartes</a></li>
+<li><a href="https://www.coordonnees-gps.fr/communes-et-villes">Villes</a></li>
+<li><a href="https://www.coordonnees-gps.fr/liste-monuments">Monuments</a></li>
+<li><a href="https://www.coordonnees-gps.fr/carte-personnalisee">Carte perso</a></li>
+</ul>
+</div>
+<!--/.nav-collapse -->
+</div>
+</div>
+<!-- Begin page content -->
+<div class="container"><div class="page-header">
+<h1>Convertisseur de coordonnées GPS</h1>
+<p>Cet outil est dédié à la <strong>conversion de coordonnées GPS</strong>.
+ Dès que vous modifiez un des champs de saisie, 
+	    (soit dans les coordonnées décimales, soit dans les coordonnées 
+sexagésimales), tous les autres champs sont automatiquement mis à jour, 
+de même que la position du marqueur sur la carte.</p>
+<p>Les coordonnées 
+GPS sont aussi affichées dans la fenêtre d'information sur la carte, 
+dans un format clair et facile à copier coller.</p>
+<p>
+<script async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/adsbygoogle.js"></script>
+<!-- coordonnees-gps-smartlink-1 -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-9379737428903517" data-ad-slot="2161078587" data-ad-format="link" data-adsbygoogle-status="done">
+<ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;">
+<ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;">
+<iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:1140px;height:90px;" width="1140" frameborder="0" height="90"></iframe>
+</ins>
+</ins>
+</ins>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<p>Vous pouvez également commencer votre conversion de 
+coordonnées GPS en cliquant sur la carte, ce qui aura pour effet de 
+pré-remplir les champs avec les coordonnées GPS du point cliqué. Dans 
+tous les cas, l'adresse ne sera pas décodée automatiquement. Si vous 
+souhaitez convertir des coordonnées GPS en adresse, vous devez cliquer 
+sur le bouton "Obtenir l'adresse" sous les coordonnées GPS décimales.
+</p>
+</div>
+<div class="row"><div id="ad-content" class="col-md-12 pub">
+<script async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/adsbygoogle.js"></script>
+<!-- coordonnees-gps-content -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-9379737428903517" data-ad-slot="7094117782" data-ad-format="auto" data-adsbygoogle-status="done">
+<ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;">
+<ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;">
+<iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:1140px;height:90px;" width="1140" frameborder="0" height="90"></iframe>
+</ins>
+</ins>
+</ins>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<form class="form-horizontal" role="form">
+<div class="form-group">
+<label for="address" class="col-md-3 control-label">Adresse</label>
+<div class="col-md-9">
+<input id="address" class="form-control" placeholder="Indiquez un lieu" autocomplete="off" type="textbox">
+</div>
+</div>
+<div class="form-group">
+<div class="col-md-offset-3 col-md-4">
+<button type="button" class="btn btn-primary" onclick="codeAddress()">Obtenir les coordonnées GPS</button>
+</div>
+</div>
+</form>
+
+<form class="form-horizontal" role="form">
+<h4>DD (degrés décimaux)*</h4>
+<div class="form-group">
+<label class="col-md-3 control-label" for="latitude">Latitude</label>
+<div class="col-md-9"><input id="latitude" class="form-control" onkeyup="ddversdms()" value="48.862725" type="textbox">
+</div>
+</div><div class="form-group">
+<label class="col-md-3 control-label" for="longitude">Longitude</label>
+<div class="col-md-9"><input id="longitude" class="form-control" onkeyup="ddversdms()" value="2.287592" type="textbox">
+</div>
+</div>
+<div class="form-group"><div class="col-md-offset-3 col-md-4">
+<button type="button" class="btn btn-primary" onclick="codeLatLng(1)">Obtenir l'adresse</button>
+</div>
+</div>
+</form>
+
+<form class="form-horizontal" role="form">
+<h4>DMS (degrés, minutes, secondes)*</h4>
+<div class="form-group">
+<label class="col-md-3 control-label" for="latitude">Latitude</label>
+<div class="col-md-9">
+<label class="radio-inline"><input name="latnordsud" value="nord" id="nord" onclick="dmsversdd()" checked="checked" type="radio"> N </label>
+<label class="radio-inline"><input name="latnordsud" value="sud" id="sud" onclick="dmsversdd()" type="radio"> S </label>
+<input class="form-control sexagesimal" id="latitude_degres" onkeyup="dmsversdd()" value="48" type="textbox">
+<label for="latitude_degres">°</label>
+<input class="form-control sexagesimal" id="latitude_minutes" onkeyup="dmsversdd()" value="51" type="textbox">
+<label for="latitude_minutes">'</label>
+<input class="form-control sexagesimalsec" id="latitude_secondes" onkeyup="dmsversdd()" value="45.81" type="textbox">
+<label for="latitude_secondes">''</label>
+</div>
+</div>
+<div class="form-group">
+<label class="col-md-3 control-label" for="longitude">Longitude</label>
+<div class="col-md-9">
+<label class="radio-inline"><input name="lngestouest" value="est" id="est" onclick="dmsversdd()" checked="checked" type="radio"> E </label>
+<label class="radio-inline"><input name="lngestouest" value="ouest" id="ouest" onclick="dmsversdd()" type="radio"> O </label>
+<input class="form-control sexagesimal" id="longitude_degres" onkeyup="dmsversdd()" value="2" type="textbox">
+<label for="longitude_degres">°</label>
+<input class="form-control sexagesimal" id="longitude_minutes" onkeyup="dmsversdd()" value="17" type="textbox">
+<label for="longitude_minutes">'</label>
+<input class="form-control sexagesimalsec" id="longitude_secondes" onkeyup="dmsversdd()" value="15.331" type="textbox">
+<label for="longitude_secondes">''</label>
+</div>
+</div>
+</form>
+<span class="help-block"><small>* Système géodésique WGS 84</small></span>
+</div>
+
+
+
+<div class="col-md-8"><div id="map_canvas" style="position: relative; overflow: hidden;">
+<div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+<div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;" class="gm-style">
+<div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;" tabindex="0">
+<div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+<div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+<div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -208, -8);">
+<div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+<div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+<div style="width: 256px; height: 256px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+<div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+<div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -208, -8);">
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;">
+</div>
+<div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;">
+</div>
+</div>
+</div>
+<div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;">
+<img style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/spotlight-poi2.png" draggable="false">
+</div>
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+<div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -208, -8);">
+<div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_011.png">
+</div>
+<div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_007.png">
+</div>
+<div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_005.png">
+</div>
+<div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_010.png">
+</div>
+<div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_009.png">
+</div>
+<div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_002.png">
+</div>
+<div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_006.png">
+</div>
+<div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_003.png">
+</div>
+<div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_004.png">
+</div>
+<div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_012.png">
+</div>
+<div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt.png">
+</div>
+<div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+<img style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/vt_008.png">
+</div>
+</div>
+</div>
+</div>
+<div style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;" class="gm-style-pbc">
+<p class="gm-style-pbt">
+</p>
+</div>
+<div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;">
+<div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+<div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+<div style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0; left: -14px; top: -43px; z-index: 0;">
+<img style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/spotlight-poi2.png" draggable="false" usemap="#gmimap0">
+<map name="gmimap0" id="gmimap0">
+<area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" title="" style="cursor: pointer;">
+</map>
+</div>
+</div>
+<div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+<div style="cursor: default; position: absolute; width: 266px; height: 79px; left: -133px; top: -146px; z-index: -146;">
+<div style="position: absolute; left: 0px; top: 0px;">
+<div style="width: 0px; height: 0px; border-right: 10px solid transparent; border-left: 10px solid transparent; border-top: 24px solid rgba(0, 0, 0, 0.1); position: absolute; left: 123px; top: 79px;">
+</div>
+<div style="position: absolute; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.2); border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); width: 266px; height: 79px;">
+</div>
+<div style="border-top-width: 24px; position: absolute; left: 123px; top: 76px;">
+<div style="position: absolute; overflow: hidden; left: -6px; top: -1px; width: 16px; height: 30px;">
+<div style="position: absolute; left: 6px; background-color: rgb(255, 255, 255); transform: skewX(22.6deg); transform-origin: 0px 0px 0px; height: 24px; width: 10px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);">
+</div>
+</div>
+<div style="position: absolute; overflow: hidden; top: -1px; left: 10px; width: 16px; height: 30px;">
+<div style="position: absolute; left: 0px; background-color: rgb(255, 255, 255); transform: skewX(-22.6deg); transform-origin: 10px 0px 0px; height: 24px; width: 10px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);">
+</div>
+</div>
+</div>
+<div style="position: absolute; left: 1px; top: 1px; border-radius: 2px; background-color: rgb(255, 255, 255); width: 264px; height: 77px;">
+</div>
+</div>
+<div style="top: 9px; position: absolute; left: 15px; width: 236px;" class="gm-style-iw">
+<div style="display: inline-block; overflow: auto; max-height: 654px; max-width: 654px;">
+<div style="overflow: auto;">
+<table>
+<tbody>
+<tr>
+<th>type</th>
+<th>latitude</th>
+<th>longitude</th>
+</tr>
+<tr>
+<td>
+<strong>DD</strong>
+</td>
+<td>48.862725</td>
+<td>2.287592</td>
+</tr>
+<tr>
+<td>
+<strong>DMS</strong>
+</td>
+<td>N 48° 51' 45.81''</td>
+<td>E 2° 17' 15.331''</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="border-top: 1px solid rgb(204, 204, 204); margin-top: 9px; padding: 6px; visibility: hidden; font-size: 13px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-family: Roboto,Arial; display: none;">
+<a href="" target="_blank" rel="noopener" style="cursor: pointer; color: rgb(66, 127, 237); text-decoration: none;">Afficher dans Google&nbsp;Maps</a>
+</div>
+</div>
+<div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 10px; z-index: 10000; cursor: pointer;">
+<img style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/mapcnt6.png" draggable="false">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<iframe aria-hidden="true" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: medium none;" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/a_003.htm" frameborder="0">
+</iframe>
+<div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+<a style="position: static; overflow: visible; float: none; display: inline;" target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=48.862725,2.287592&amp;z=7&amp;t=m&amp;hl=fr&amp;gl=US&amp;mapclient=apiv3" title="Cliquez ici pour afficher cette zone sur Google&nbsp;Maps">
+<div style="width: 66px; height: 26px; cursor: pointer;">
+<img style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/google4.png" draggable="false">
+</div>
+</a>
+</div>
+<div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 225px; top: 160px;">
+<div style="padding: 0px 0px 10px; font-size: 16px;">Données cartographiques</div>
+<div style="font-size: 13px;">Données cartographiques ©2018 GeoBasis-DE/BKG (©2009), Google, Inst. Geogr. Nacional</div>
+<div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;">
+<img style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/mapcnt6.png" draggable="false">
+</div>
+</div>
+<div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 278px; bottom: 0px; width: 414px;">
+<div draggable="false" style="-moz-user-select: none; height: 14px; line-height: 14px;" class="gm-style-cc">
+<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+<div style="width: 1px;">
+</div>
+<div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+</div>
+</div>
+<div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+<a style="text-decoration: none; cursor: pointer; display: none;">Données cartographiques</a>
+<span>Données cartographiques ©2018 GeoBasis-DE/BKG (©2009), Google, Inst. Geogr. Nacional</span>
+</div>
+</div>
+</div>
+<div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+<div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Données cartographiques ©2018 GeoBasis-DE/BKG (©2009), Google, Inst. Geogr. Nacional</div>
+</div>
+<div class="gmnoprint gm-style-cc" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 165px; bottom: 0px;" draggable="false">
+<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+<div style="width: 1px;">
+</div>
+<div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+</div>
+</div>
+<div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+<a style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" href="https://www.google.com/intl/fr_US/help/terms_maps.html" target="_blank" rel="noopener">Conditions d'utilisation</a>
+</div>
+</div>
+<button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; margin: 10px; padding: 0px; position: absolute; cursor: pointer; -moz-user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); overflow: hidden; top: 0px; right: 0px;" draggable="false" title="Passer en plein écran" aria-label="Passer en plein écran" type="button" class="gm-control-active gm-fullscreen-control">
+<img style="height: 18px; width: 18px; padding: 8px 3px 10px; margin-top: 3px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 18px; width: 18px; padding: 8px 3px 10px; margin-top: 3px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 18px; width: 18px; padding: 8px 3px 10px; margin-top: 3px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+</button>
+<div draggable="false" style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" class="gm-style-cc">
+<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+<div style="width: 1px;">
+</div>
+<div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+</div>
+</div>
+<div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+<a target="_blank" rel="noopener" title="Signaler à Google une erreur dans la carte routière ou les images" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" href="https://www.google.com/maps/@48.862725,2.287592,7z/data=%2110m1%211e1%2112b1?source=apiv3&amp;rapsrc=apiv3">Signaler une erreur cartographique</a>
+</div>
+</div>
+<div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 167px; right: 40px;" draggable="false" controlwidth="40" controlheight="153">
+<div class="gmnoprint" style="position: absolute; left: 0px; top: 72px;" controlwidth="40" controlheight="81">
+<div draggable="false" style="-moz-user-select: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;">
+<button style="background: transparent none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;" draggable="false" title="Zoom avant" aria-label="Zoom avant" type="button" class="gm-control-active">
+<img style="height: 18px; width: 18px; padding: 9px 11px 13px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 18px; width: 18px; padding: 9px 11px 13px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 18px; width: 18px; padding: 9px 11px 13px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+</button>
+<div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;">
+</div>
+<button style="background: transparent none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;" draggable="false" title="Zoom arrière" aria-label="Zoom arrière" type="button" class="gm-control-active">
+<img style="height: 18px; width: 18px; padding: 13px 11px 9px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 18px; width: 18px; padding: 13px 11px 9px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 18px; width: 18px; padding: 13px 11px 9px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+</button>
+</div>
+</div>
+<div class="gm-svpc" style="background-color: rgb(255, 255, 255); box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; width: 40px; height: 40px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; position: absolute; left: 0px; top: 0px;" controlwidth="40" controlheight="40">
+<div style="position: absolute;">
+</div>
+<div style="position: absolute;">
+<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2238%22%20viewBox%3D%220%200%2023%2038%22%3E%0A%3Cpath%20d%3D%22M16.6%2C38.1h-5.5l-0.2-2.9-0.2%2C2.9h-5.5L5%2C25.3l-0.8%2C2a1.53%2C1.53%2C0%2C0%2C1-1.9.9l-1.2-.4a1.58%2C1.58%2C0%2C0%2C1-1-1.9v-0.1c0.3-.9%2C3.1-11.2%2C3.1-11.2a2.66%2C2.66%2C0%2C0%2C1%2C2.3-2l0.6-.5a6.93%2C6.93%2C0%2C0%2C1%2C4.7-12%2C6.8%2C6.8%2C0%2C0%2C1%2C4.9%2C2%2C7%2C7%2C0%2C0%2C1%2C2%2C4.9%2C6.65%2C6.65%2C0%2C0%2C1-2.2%2C5l0.7%2C0.5a2.78%2C2.78%2C0%2C0%2C1%2C2.4%2C2s2.9%2C11.2%2C2.9%2C11.3a1.53%2C1.53%2C0%2C0%2C1-.9%2C1.9l-1.3.4a1.63%2C1.63%2C0%2C0%2C1-1.9-.9l-0.7-1.8-0.1%2C12.7h0Zm-3.6-2h1.7L14.9%2C20.3l1.9-.3%2C2.4%2C6.3%2C0.3-.1c-0.2-.8-0.8-3.2-2.8-10.9a0.63%2C0.63%2C0%2C0%2C0-.6-0.5h-0.6l-1.1-.9h-1.9l-0.3-2a4.83%2C4.83%2C0%2C0%2C0%2C3.5-4.7A4.78%2C4.78%200%200%2C0%2011%202.3H10.8a4.9%2C4.9%2C0%2C0%2C0-1.4%2C9.6l-0.3%2C2h-1.9l-1%2C.9h-0.6a0.74%2C0.74%2C0%2C0%2C0-.6.5c-2%2C7.5-2.7%2C10-3%2C10.9l0.3%2C0.1%2C2.5-6.3%2C1.9%2C0.3%2C0.2%2C15.8h1.6l0.6-8.4a1.52%2C1.52%2C0%2C0%2C1%2C1.5-1.4%2C1.5%2C1.5%2C0%2C0%2C1%2C1.5%2C1.4l0.9%2C8.4h0Zm-10.9-9.6h0Zm17.5-.1h0Z%22%20style%3D%22fill%3A%23333%3Bopacity%3A0.7%3Bisolation%3Aisolate%22%2F%3E%0A%3Cpath%20d%3D%22M5.9%2C13.6l1.1-.9h7.8l1.2%2C0.9%22%20style%3D%22fill%3A%23ce592c%22%2F%3E%0A%3Cellipse%20cx%3D%2210.9%22%20cy%3D%2213.1%22%20rx%3D%222.7%22%20ry%3D%220.3%22%20style%3D%22fill%3A%23ce592c%3Bopacity%3A0.5%3Bisolation%3Aisolate%22%2F%3E%0A%3Cpath%20d%3D%22M20.6%2C26.1l-2.9-11.3a1.71%2C1.71%2C0%2C0%2C0-1.6-1.2H5.7a1.69%2C1.69%2C0%2C0%2C0-1.5%2C1.3l-3.1%2C11.3a0.61%2C0.61%2C0%2C0%2C0%2C.3.7l1.1%2C0.4a0.61%2C0.61%2C0%2C0%2C0%2C.7-0.3l2.7-6.7%2C0.2%2C16.8h3.6l0.6-9.3a0.47%2C0.47%2C0%2C0%2C1%2C.44-0.5h0.06c0.4%2C0%2C.4.2%2C0.5%2C0.5l0.6%2C9.3h3.6L15.7%2C20.3l2.5%2C6.6a0.52%2C0.52%2C0%2C0%2C0%2C.66.31h0l1.2-.4a0.57%2C0.57%2C0%2C0%2C0%2C.5-0.7h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%2F%3E%0A%3Cpath%20d%3D%22M7%2C13.6l3.9%2C6.7%2C3.9-6.7%22%20style%3D%22fill%3A%23cf572e%3Bopacity%3A0.6%3Bisolation%3Aisolate%22%2F%3E%0A%3Ccircle%20cx%3D%2210.9%22%20cy%3D%227%22%20r%3D%225.9%22%20style%3D%22fill%3A%23fdbf2d%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px; height: 30px; padding: 5px 11px;" aria-label="Contrôle de Pegman dans Street&nbsp;View">
+<img src="data:image/svg+xml,%3Csvg%20width%3D%2224px%22%20height%3D%2238px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2024%2038%22%3E%0A%3Cpath%20d%3D%22M22%2C26.6l-2.9-11.3a2.78%2C2.78%2C0%2C0%2C0-2.4-2l-0.7-.5a6.82%2C6.82%2C0%2C0%2C0%2C2.2-5%2C6.9%2C6.9%2C0%2C0%2C0-13.8%2C0%2C7%2C7%2C0%2C0%2C0%2C2.2%2C5.1l-0.6.5a2.55%2C2.55%2C0%2C0%2C0-2.3%2C2s-3%2C11.1-3%2C11.2v0.1a1.58%2C1.58%2C0%2C0%2C0%2C1%2C1.9l1.2%2C0.4a1.63%2C1.63%2C0%2C0%2C0%2C1.9-.9l0.8-2%2C0.2%2C12.8h11.3l0.2-12.6%2C0.7%2C1.8a1.54%2C1.54%2C0%2C0%2C0%2C1.5%2C1%2C1.09%2C1.09%2C0%2C0%2C0%2C.5-0.1l1.3-.4a1.85%2C1.85%2C0%2C0%2C0%2C.7-2h0Zm-1.2.9-1.2.4a0.61%2C0.61%2C0%2C0%2C1-.7-0.3l-2.5-6.6-0.2%2C16.8h-9.4L6.6%2C21l-2.7%2C6.7a0.52%2C0.52%2C0%2C0%2C1-.66.31h0l-1.1-.4a0.52%2C0.52%2C0%2C0%2C1-.31-0.66v0l3.1-11.3a1.69%2C1.69%2C0%2C0%2C1%2C1.5-1.3h0.2l1-.9h2.3a5.9%2C5.9%2C0%2C1%2C1%2C3.2%2C0h2.3l1.1%2C0.9h0.2a1.71%2C1.71%2C0%2C0%2C1%2C1.6%2C1.2l2.9%2C11.3a0.84%2C0.84%2C0%2C0%2C1-.4.7h0Z%22%20style%3D%22fill%3A%23333%3Bfill-opacity%3A0.2%22%2F%3E%22%0A%3C%2Fsvg%3E%0A%0A" style="display: none; width: 18px; height: 30px; padding: 5px 11px;" aria-label="Pegman est au-dessus de la carte">
+<img style="display: none; width: 32px; height: 40px; padding-top: 2px; padding-right: 6px;" src="data:image/svg+xml,%3Csvg%20width%3D%2240px%22%20height%3D%2250px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2040%2050%22%3E%0A%3Cpath%20d%3D%22M34.00%2C-30.40l-2.9-11.3a2.78%2C2.78%2C0%2C0%2C0-2.4-2l-0.7-.5a6.82%2C6.82%2C0%2C0%2C0%2C2.2-5%2C6.9%2C6.9%2C0%2C0%2C0-13.8%2C0%2C7%2C7%2C0%2C0%2C0%2C2.2%2C5.1l-0.6.5a2.55%2C2.55%2C0%2C0%2C0-2.3%2C2s-3%2C11.1-3%2C11.2v0.1a1.58%2C1.58%2C0%2C0%2C0%2C1%2C1.9l1.2%2C0.4a1.63%2C1.63%2C0%2C0%2C0%2C1.9-.9l0.8-2%2C0.2%2C12.8h11.3l0.2-12.6%2C0.7%2C1.8a1.54%2C1.54%2C0%2C0%2C0%2C1.5%2C1%2C1.09%2C1.09%2C0%2C0%2C0%2C.5-0.1l1.3-.4a1.85%2C1.85%2C0%2C0%2C0%2C.7-2h0Zm-1.2.9-1.2.4a0.61%2C0.61%2C0%2C0%2C1-.7-0.3l-2.5-6.6-0.2%2C16.8h-9.4L18.60%2C-36.00l-2.7%2C6.7a0.52%2C0.52%2C0%2C0%2C1-.66.31h0l-1.1-.4a0.52%2C0.52%2C0%2C0%2C1-.31-0.66v0l3.1-11.3a1.69%2C1.69%2C0%2C0%2C1%2C1.5-1.3h0.2l1-.9h2.3a5.9%2C5.9%2C0%2C1%2C1%2C3.2%2C0h2.3l1.1%2C0.9h0.2a1.71%2C1.71%2C0%2C0%2C1%2C1.6%2C1.2l2.9%2C11.3a0.84%2C0.84%2C0%2C0%2C1-.4.7h0Zm1.2%2C59.1-2.9-11.3a2.78%2C2.78%2C0%2C0%2C0-2.4-2l-0.7-.5a6.82%2C6.82%2C0%2C0%2C0%2C2.2-5%2C6.9%2C6.9%2C0%2C0%2C0-13.8%2C0%2C7%2C7%2C0%2C0%2C0%2C2.2%2C5.1l-0.6.5a2.55%2C2.55%2C0%2C0%2C0-2.3%2C2s-3%2C11.1-3%2C11.2v0.1a1.58%2C1.58%2C0%2C0%2C0%2C1%2C1.9l1.2%2C0.4a1.63%2C1.63%2C0%2C0%2C0%2C1.9-.9l0.8-2%2C0.2%2C12.8h11.3l0.2-12.6%2C0.7%2C1.8a1.54%2C1.54%2C0%2C0%2C0%2C1.5%2C1%2C1.09%2C1.09%2C0%2C0%2C0%2C.5-0.1l1.3-.4a1.85%2C1.85%2C0%2C0%2C0%2C.7-2h0Zm-1.2.9-1.2.4a0.61%2C0.61%2C0%2C0%2C1-.7-0.3l-2.5-6.6-0.2%2C16.8h-9.4L18.60%2C24.00l-2.7%2C6.7a0.52%2C0.52%2C0%2C0%2C1-.66.31h0l-1.1-.4a0.52%2C0.52%2C0%2C0%2C1-.31-0.66v0l3.1-11.3a1.69%2C1.69%2C0%2C0%2C1%2C1.5-1.3h0.2l1-.9h2.3a5.9%2C5.9%2C0%2C1%2C1%2C3.2%2C0h2.3l1.1%2C0.9h0.2a1.71%2C1.71%2C0%2C0%2C1%2C1.6%2C1.2l2.9%2C11.3a0.84%2C0.84%2C0%2C0%2C1-.4.7h0Z%22%20style%3D%22fill%3A%23333%3Bfill-opacity%3A0.2%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M15.40%2C38.80h-4a1.64%2C1.64%2C0%2C0%2C1-1.4-1.1l-3.1-8a0.9%2C0.9%2C0%2C0%2C1-.5.1l-1.4.1a1.62%2C1.62%2C0%2C0%2C1-1.6-1.4l-1.1-13.1%2C1.6-1.3a6.87%2C6.87%2C0%2C0%2C1-3-4.6A7.14%2C7.14%200%200%2C1%202%204a7.6%2C7.6%2C0%2C0%2C1%2C4.7-3.1%2C7.14%2C7.14%2C0%2C0%2C1%2C5.5%2C1.1%2C7.28%2C7.28%2C0%2C0%2C1%2C2.3%2C9.6l2.1-.1%2C0.1%2C1c0%2C0.2.1%2C0.5%2C0.1%2C0.8a2.41%2C2.41%2C0%2C0%2C1%2C1%2C1s1.9%2C3.2%2C2.8%2C4.9c0.7%2C1.2%2C2.1%2C4.2%2C2.8%2C5.9a2.1%2C2.1%2C0%2C0%2C1-.8%2C2.6l-0.6.4a1.63%2C1.63%2C0%2C0%2C1-1.5.2l-0.6-.3a8.93%2C8.93%2C0%2C0%2C0%2C.5%2C1.3%2C7.91%2C7.91%2C0%2C0%2C0%2C1.8%2C2.6l0.6%2C0.3v4.6l-4.5-.1a7.32%2C7.32%2C0%2C0%2C1-2.5-1.5l-0.4%2C3.6h0Zm-10-19.2%2C3.5%2C9.8%2C2.9%2C7.5h1.6V35l-1.9-9.4%2C3.1%2C5.4a8.24%2C8.24%2C0%2C0%2C0%2C3.8%2C3.8h2.1v-1.4a14%2C14%2C0%2C0%2C1-2.2-3.1%2C44.55%2C44.55%2C0%2C0%2C1-2.2-8l-1.3-6.3%2C3.2%2C5.6c0.6%2C1.1%2C2.1%2C3.6%2C2.8%2C4.9l0.6-.4c-0.8-1.6-2.1-4.6-2.8-5.8-0.9-1.7-2.8-4.9-2.8-4.9a0.54%2C0.54%2C0%2C0%2C0-.4-0.3l-0.7-.1-0.1-.7a4.33%2C4.33%2C0%2C0%2C0-.1-0.5l-5.3.3%2C2.2-1.9a4.3%2C4.3%2C0%2C0%2C0%2C.9-1%2C5.17%2C5.17%2C0%2C0%2C0%2C.8-4%2C5.67%2C5.67%2C0%2C0%2C0-2.2-3.4%2C5.09%2C5.09%2C0%2C0%2C0-4-.8%2C5.67%2C5.67%2C0%2C0%2C0-3.4%2C2.2%2C5.17%2C5.17%2C0%2C0%2C0-.8%2C4%2C5.67%2C5.67%2C0%2C0%2C0%2C2.2%2C3.4%2C3.13%2C3.13%2C0%2C0%2C0%2C1%2C.5l1.6%2C0.6-3.2%2C2.6%2C1%2C11.5h0.4l-0.3-8.2h0Z%22%20style%3D%22fill%3A%23333%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M3.35%2C15.90l1.1%2C12.5a0.39%2C0.39%2C0%2C0%2C0%2C.36.42l0.14%2C0%2C1.4-.1a0.66%2C0.66%2C0%2C0%2C0%2C.5-0.4l-0.2-3.8-3.3-8.6h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M5.20%2C28.80l1.1-.1a0.66%2C0.66%2C0%2C0%2C0%2C.5-0.4l-0.2-3.8-1.2-3.1Z%22%20style%3D%22fill%3A%23ce592b%3Bfill-opacity%3A0.25%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M21.40%2C35.70l-3.8-1.2-2.7-7.8L12.00%2C15.5l3.4-2.9c0.2%2C2.4%2C2.2%2C14.1%2C3.7%2C17.1%2C0%2C0%2C1.3%2C2.6%2C2.3%2C3.1v2.9m-8.4-8.1-2-.3%2C2.5%2C10.1%2C0.9%2C0.4v-2.9%22%20style%3D%22fill%3A%23e5892b%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M17.80%2C25.40c-0.4-1.5-.7-3.1-1.1-4.8-0.1-.4-0.1-0.7-0.2-1.1l-1.1-2-1.7-1.6s0.9%2C5%2C2.4%2C7.1a19.12%2C19.12%2C0%2C0%2C0%2C1.7%2C2.4h0Z%22%20style%3D%22fill%3A%23cf572e%3Bopacity%3A0.6%3Bisolation%3Aisolate%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M14.40%2C37.80h-3a0.43%2C0.43%2C0%2C0%2C1-.4-0.4l-3-7.8-1.7-4.8-3-9%2C8.9-.4s2.9%2C11.3%2C4.3%2C14.4c1.9%2C4.1%2C3.1%2C4.7%2C5%2C5.8h-3.2s-4.1-1.2-5.9-7.7a0.59%2C0.59%2C0%2C0%2C0-.6-0.4%2C0.62%2C0.62%2C0%2C0%2C0-.3.7s0.5%2C2.4.9%2C3.6a34.87%2C34.87%2C0%2C0%2C0%2C2%2C6h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M15.40%2C12.70l-3.3%2C2.9-8.9.4%2C3.3-2.7%22%20style%3D%22fill%3A%23ce592b%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M9.10%2C21.10l1.4-6.2-5.9.5%22%20style%3D%22fill%3A%23cf572e%3Bopacity%3A0.6%3Bisolation%3Aisolate%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M12.00%2C13.5a4.75%2C4.75%2C0%2C0%2C1-2.6%2C1.1c-1.5.3-2.9%2C0.2-2.9%2C0s1.1-.6%2C2.7-1%22%20style%3D%22fill%3A%23bb3d19%22%3E%3C%2Fpath%3E%0A%3Ccircle%20cx%3D%227.92%22%20cy%3D%228.19%22%20r%3D%226.3%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fcircle%3E%0A%3Cpath%20d%3D%22M4.70%2C13.60a6.21%2C6.21%2C0%2C0%2C0%2C8.4-1.9v-0.1a8.89%2C8.89%2C0%2C0%2C1-8.4%2C2h0Z%22%20style%3D%22fill%3A%23ce592b%3Bfill-opacity%3A0.25%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M21.20%2C27.20l0.6-.4a1.09%2C1.09%2C0%2C0%2C0%2C.4-1.3c-0.7-1.5-2.1-4.6-2.8-5.8-0.9-1.7-2.8-4.9-2.8-4.9a1.6%2C1.6%2C0%2C0%2C0-2.17-.65l-0.23.15a1.68%2C1.68%2C0%2C0%2C0-.4%2C2.1s2.3%2C3.9%2C3.1%2C5.3c0.6%2C1%2C2.1%2C3.7%2C2.9%2C5.1a0.94%2C0.94%2C0%2C0%2C0%2C1.24.49l0.16-.09h0Z%22%20style%3D%22fill%3A%23fdbf2d%22%3E%3C%2Fpath%3E%0A%3Cpath%20d%3D%22M19.40%2C19.80c-0.9-1.7-2.8-4.9-2.8-4.9a1.6%2C1.6%2C0%2C0%2C0-2.17-.65l-0.23.15-0.3.3c1.1%2C1.5%2C2.9%2C3.8%2C3.9%2C5.4%2C1.1%2C1.8%2C2.9%2C5%2C3.8%2C6.7l0.1-.1a1.09%2C1.09%2C0%2C0%2C0%2C.4-1.3%2C57.67%2C57.67%2C0%2C0%2C0-2.7-5.6h0Z%22%20style%3D%22fill%3A%23ce592b%3Bfill-opacity%3A0.25%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A" aria-label="Contrôle de Pegman dans Street&nbsp;View">
+</div>
+</div>
+<div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;">
+<div draggable="false" style="-moz-user-select: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; cursor: pointer; width: 40px; height: 40px;">
+<button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden;" draggable="false" title="Rotate map 90 degrees" aria-label="Rotate map 90 degrees" type="button" class="gm-control-active">
+<img style="height: 28px; width: 28px; margin: 6px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 28px; width: 28px; margin: 6px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="height: 28px; width: 28px; margin: 6px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+</button>
+<button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; -moz-user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden;" draggable="false" title="Tilt map" aria-label="Tilt map" type="button" class="gm-tilt gm-control-active">
+<img style="width: 18px; height: 16px; margin: 12px 11px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="width: 18px; height: 16px; margin: 12px 11px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+<img style="width: 18px; height: 16px; margin: 12px 11px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+</button>
+</div>
+</div>
+</div>
+<div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;">
+<div style="float: left; position: relative;" class="gm-style-mtc">
+<div role="button" tabindex="0" title="Afficher un plan de ville" aria-label="Afficher un plan de ville" aria-pressed="true" style="direction: ltr; overflow: hidden; text-align: center; height: 40px; display: table-cell; vertical-align: middle; position: relative; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 0px 17px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 36px; font-weight: 500;" draggable="false">Plan</div>
+<div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; left: 0px; top: 40px; text-align: left; display: none;">
+<div style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;" draggable="false" title="Afficher le relief sur la carte">
+<span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
+<div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+<img style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/imgs8.png" draggable="false">
+</div>
+</span>
+<label style="vertical-align: middle; cursor: pointer;">Relief</label>
+</div>
+</div>
+</div>
+<div style="float: left; position: relative;" class="gm-style-mtc">
+<div role="button" tabindex="0" title="Afficher les images satellite" aria-label="Afficher les images satellite" aria-pressed="false" style="direction: ltr; overflow: hidden; text-align: center; height: 40px; display: table-cell; vertical-align: middle; position: relative; color: rgb(86, 86, 86); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 0px 17px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 66px; border-left: 0px none;" draggable="false">Satellite</div>
+<div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; right: 0px; top: 40px; text-align: left; display: none;">
+<div style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;" draggable="false" title="Afficher les images satellite avec le nom des rues">
+<span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;">
+<div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;">
+<img style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;" alt="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/imgs8.png" draggable="false">
+</div>
+</span>
+<label style="vertical-align: middle; cursor: pointer;">Légendes</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 pub" id="ad-bottom">
+<script async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/adsbygoogle.js">
+</script>
+<!-- coordonnees-gps-bottom -->
+<ins class="adsbygoogle" style="display: block; height: 106px;" data-ad-client="ca-pub-9379737428903517" data-ad-slot="5617384584" data-ad-format="auto" data-adsbygoogle-status="done">
+<ins id="aswift_2_expand" style="display: inline-table; border: medium none; height: 106px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 1140px; background-color: transparent;">
+<ins id="aswift_2_anchor" style="display: block; border: medium none; height: 106px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 1140px; background-color: transparent; overflow: hidden;">
+<iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; width: 1140px; height: 106px;" width="1140" frameborder="0" height="106">
+</iframe>
+</ins>
+</ins>
+</ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 pub">
+<script async="" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/adsbygoogle.js">
+</script>
+<!-- coordonnees-gps-matched -->
+<ins class="adsbygoogle" style="display: block; height: 570px;" data-ad-client="ca-pub-9379737428903517" data-ad-slot="5174934989" data-ad-format="autorelaxed" data-adsbygoogle-status="done">
+<ins id="aswift_3_expand" style="display:inline-table;border:none;height:570px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;">
+<ins id="aswift_3_anchor" style="display:block;border:none;height:570px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;">
+<iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;width:1140px;height:570px;" width="1140" frameborder="0" height="570">
+</iframe>
+</ins>
+</ins>
+</ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div class="container">
+<p class="text-muted credit">
+<small>Copyright © 2018 www.coordonnees-gps.fr</small> | <a href="https://www.coordonnees-gps.fr/contact">Contact</a> | <a href="https://www.coordonnees-gps.fr/privacy">Confidentialité</a> | <a href="https://www.coordonnees-gps.fr/terms">CGU</a> | <a href="https://www.coordonnees-gps.fr/comment-modifier-google-map">Modifier Google Map</a>
+</p>
+</div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/jquery-1.js">
+</script>
+<script src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/bootstrap.js">
+</script>
+<script>
+        $(document).ready(function() {
+          $("form").keypress(function(e) {
+            //Enter key
+            if (e.which == 13) {
+              return false;
+            }
+          });
+        });
+    </script>
+	<script type="text/javascript">
+    window.___gcfg = {
+      lang: 'fr',
+      parsetags: 'onload'
+    };
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+	window.cookieconsent_options = {"message":"En poursuivant votre navigation, vous acceptez l'utilisation, de notre part et de tiers, de cookies à des fins de statistiques, personnalisation des contenus, partage sur les réseaux sociaux, mesure d'audience, profilage et publicité ciblée.","dismiss":"OK!","learnMore":"En savoir plus","link":"http://www.coordonnees-gps.fr/privacy","theme":"/cookieconsent/light-bottom.css"};
+    </script>
+	<script type="text/javascript" src="Conversion%20de%20coordonn%C3%A9es%20GPS%20_%20Conversion%20latitude%20longitude_fichiers/cookieconsent.js" async="" defer="defer">
+</script>
+<!-- End Cookie Consent plugin -->
+<script>
+    $(document).ready(function() {
+	$("#address").keydown(function(e) {
+	    fromPlace = 0;
+	});
+    });
+</script>

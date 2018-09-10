@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="OpenCPN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:opencpn="http://www.opencpn.org">
+  <rte>
+    <name>Tour de Dumet</name>
+    <extensions>
+      <opencpn:guid>6140ffff-7024-4fe3-a6b4-7e0401440000</opencpn:guid>
+      <opencpn:viz>1</opencpn:viz>
+      <opencpn:planned_speed>6.00</opencpn:planned_speed>
+      <opencpn:time_display>PC</opencpn:time_display>
+    </extensions>
+    <rtept lat="47.505964850" lon="-2.479932029">
+      <time>2018-07-02T15:48:03Z</time>
+      <name>001</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>29ee0000-cb21-4bf1-9c9d-00a8154d0000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.505964850" lon="-2.526964524">
+      <time>2018-07-02T15:48:09Z</time>
+      <name>002</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1a450000-6c94-4cd9-ba8d-e88125340000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.485345295" lon="-2.581395389">
+      <time>2018-07-02T15:48:13Z</time>
+      <name>003</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1b520000-4a52-481d-b984-278631b50000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.419236792" lon="-2.580470593">
+      <time>2018-07-02T15:48:22Z</time>
+      <name>004</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>11500000-ae59-4139-b756-4d40525bffff</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.407793377" lon="-2.605704319">
+      <time>2018-07-02T15:48:29Z</time>
+      <name>005</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>6b5fffff-b633-4755-bddb-9337444bffff</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.407614554" lon="-2.626181950">
+      <time>2018-07-02T15:48:36Z</time>
+      <name>006</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1f0c0000-8737-4fe4-be1e-f79114e30000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.411637927" lon="-2.634108775">
+      <time>2018-07-02T15:48:46Z</time>
+      <name>007</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>239e0000-ca57-4edc-ac96-873b1f7a0000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.484809614" lon="-2.580999048">
+      <time>2018-07-02T15:48:54Z</time>
+      <name>008</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>4d4dffff-9a6b-4d4b-bdf5-cb675d74ffff</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.505964850" lon="-2.526964524">
+      <time>2018-07-02T15:48:09Z</time>
+      <name>002</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1a450000-6c94-4cd9-ba8d-e88125340000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.506054094" lon="-2.478743005">
+      <time>2018-07-02T15:49:12Z</time>
+      <name>010</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>276b0000-0646-4cb0-8127-e4cb07710000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+  </rte>
+</gpx>

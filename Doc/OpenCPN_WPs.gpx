@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="OpenCPN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:opencpn="http://www.opencpn.org">
+  <wpt lat="48.268836667" lon="-4.633815000">
+    <time>2014-03-13T17:20:59Z</time>
+    <name>Toulinguet_ChenalSud</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>53a5ffff-60aa-4228-92cb-07e44760ffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="48.258413333" lon="-4.675060000">
+    <time>2014-03-13T17:23:31Z</time>
+    <name>Toulinguet_LeachSudOuest</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>24800000-201c-4427-90dd-3c3c59c3ffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="48.364400000" lon="-4.443400000">
+    <time>2014-04-18T21:11:24Z</time>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>782effff-ff73-43e9-9e21-44b2543cffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.583448333" lon="-3.377855000">
+    <time>2014-04-18T21:24:42Z</time>
+    <name>Groix les chats</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>4f46ffff-6188-410e-a1dd-873713040000</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.478438333" lon="-3.291853333">
+    <time>2014-04-18T21:26:03Z</time>
+    <name>Birvideaux sud</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>4e3bffff-74f8-4ea3-a1c9-a829692cffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.494873333" lon="-2.511178333">
+    <time>2014-07-03T17:43:24Z</time>
+    <name>Varlingue!!!</name>
+    <desc>DANGER</desc>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>165f0000-731a-4621-99bc-f0011f280000</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.492151667" lon="-2.505645000">
+    <time>2014-07-03T17:45:22Z</time>
+    <name>Varlingue</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>12860000-7582-46ae-b2b4-201e7543ffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.378423333" lon="-2.586866667">
+    <time>2014-07-03T17:45:59Z</time>
+    <name>Bayonelles</name>
+    <sym>light</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>4aaaffff-6d2a-49c7-80a7-314a3ebc0000</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.419701667" lon="-2.582236667">
+    <time>2014-07-03T17:47:43Z</time>
+    <name>Dumet_Basse_EST</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>3c290000-a371-4160-b243-133e565bffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.342361667" lon="-2.515103333">
+    <time>2014-07-03T17:48:28Z</time>
+    <name>LaTurballe</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>22440000-0652-4000-97dc-1a226cf0ffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="false" number="-1" step="-1" units="-1" colour="#FFFFFF" />
+    </extensions>
+  </wpt>
+  <wpt lat="47.407605000" lon="-3.000096667">
+    <time>2018-08-14T15:18:49Z</time>
+    <name>ATT_Beniguet</name>
+    <sym>triangle</sym>
+    <type>WPT</type>
+    <extensions>
+      <opencpn:guid>796bffff-9ded-4fcb-aa13-a25f5970ffff</opencpn:guid>
+      <opencpn:viz_name>1</opencpn:viz_name>
+      <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+      <opencpn:waypoint_range_rings visible="true" number="3" step="0.100000001" units="0" colour="#FF0000" />
+    </extensions>
+  </wpt>
+  <rte>
+    <extensions>
+      <opencpn:guid>6140ffff-7024-4fe3-a6b4-7e0401440000</opencpn:guid>
+      <opencpn:viz>1</opencpn:viz>
+      <opencpn:planned_speed>6.00</opencpn:planned_speed>
+      <opencpn:time_display>PC</opencpn:time_display>
+    </extensions>
+    <rtept lat="47.505964850" lon="-2.479932029">
+      <time>2018-07-02T15:48:03Z</time>
+      <name>001</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>29ee0000-cb21-4bf1-9c9d-00a8154d0000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.505964850" lon="-2.526964524">
+      <time>2018-07-02T15:48:09Z</time>
+      <name>002</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1a450000-6c94-4cd9-ba8d-e88125340000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.485345295" lon="-2.581395389">
+      <time>2018-07-02T15:48:13Z</time>
+      <name>003</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1b520000-4a52-481d-b984-278631b50000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.419236792" lon="-2.580470593">
+      <time>2018-07-02T15:48:22Z</time>
+      <name>004</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>11500000-ae59-4139-b756-4d40525bffff</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.407793377" lon="-2.605704319">
+      <time>2018-07-02T15:48:29Z</time>
+      <name>005</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>6b5fffff-b633-4755-bddb-9337444bffff</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.407614554" lon="-2.626181950">
+      <time>2018-07-02T15:48:36Z</time>
+      <name>006</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1f0c0000-8737-4fe4-be1e-f79114e30000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.411637927" lon="-2.634108775">
+      <time>2018-07-02T15:48:46Z</time>
+      <name>007</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>239e0000-ca57-4edc-ac96-873b1f7a0000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.484809614" lon="-2.580999048">
+      <time>2018-07-02T15:48:54Z</time>
+      <name>008</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>4d4dffff-9a6b-4d4b-bdf5-cb675d74ffff</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.505964850" lon="-2.526964524">
+      <time>2018-07-02T15:48:09Z</time>
+      <name>002</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>1a450000-6c94-4cd9-ba8d-e88125340000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+    <rtept lat="47.506054094" lon="-2.478743005">
+      <time>2018-07-02T15:49:12Z</time>
+      <name>010</name>
+      <sym>diamond</sym>
+      <type>WPT</type>
+      <extensions>
+        <opencpn:guid>276b0000-0646-4cb0-8127-e4cb07710000</opencpn:guid>
+        <opencpn:auto_name>1</opencpn:auto_name>
+        <opencpn:arrival_radius>0.050</opencpn:arrival_radius>
+        <opencpn:waypoint_range_rings visible="false" number="1" step="1" units="0" colour="#FF0000" />
+      </extensions>
+    </rtept>
+  </rte>
+  <trk>
+    <extensions>
+      <opencpn:guid>7b72ffff-968f-497b-9ba0-e4cf4bb8ffff</opencpn:guid>
+      <opencpn:viz>1</opencpn:viz>
+    </extensions>
+    <trkseg>
+      <trkpt lat="45.056700000" lon="13.645600000">
+        <time>2018-08-14T13:09:25Z</time>
+      </trkpt>
+      <trkpt lat="45.056700000" lon="13.645600000">
+        <time>2018-08-14T13:10:09Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
