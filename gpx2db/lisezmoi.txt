@@ -1,0 +1,8 @@
+gps2db <db> <fichier.gpx>
+connecter à la db
+ouvrir le fichier GPX
+pour chaque element 
+    le stocker dans la DB
+fermer la db
+fermer le fichier
+rendre compte
