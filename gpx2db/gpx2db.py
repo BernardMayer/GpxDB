@@ -61,18 +61,32 @@ except Exception as e:
     print("Pb avec lib gpxpy", e, file=sys.stderr)
     sys.exit()
 
-fGpx = open(gpxFilename)
-gpx = gpxpy.parse(fGpx)
-fGpx.close()
-
-
-for waypoint in gpx.waypoints:
-    print('waypoint {0} -> ({1},{2})'.format( waypoint.name, waypoint.latitude, waypoint.longitude ))
-
 # fGpx = open(gpxFilename, 'r')
 # for l in fGpx.readline().rstrip(\n\r) :
-    
 
+
+# fGpx = open(gpxFilename)
+# gpx = gpxpy.parse(fGpx)
+# fGpx.close()
+# for waypoint in gpx.waypoints:
+    # print('waypoint {0} -> ({1},{2})'.format( waypoint.name, waypoint.latitude, waypoint.longitude ))
+
+    
+# from xml.etree import ElementTree as ET
+# tree = ET.parse(gpxFilename)
+# for elem in tree.findall("{http://www.topografix.com/GPX/1/1}wpt"):
+    # print(elem)
+
+##  https://docs.python.org/3.4/library/xml.etree.elementtree.html    
+from lxml import etree
+NSMAP = {"gpx": "http://www.topografix.com/GPX/1/1"}
+tree = etree.parse(gpxFilename)
+# for elem in tree.findall("gpx:wpt", namespaces=NSMAP):
+    # print(elem.tag, elem.attrib)   
+
+    
+    
+    
 # fGpx.close()
 dbCnx.close()
         
