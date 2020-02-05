@@ -27,6 +27,24 @@ from __future__ import print_function
 import os, sys
 import sqlite3
 
+def cleanNS(s) :
+    if (s is None) :
+        return ''
+    return s[s.find('}') + 1:]
+
+def forge_dWpt() :
+    dWpt = dict()
+    dWpt['lat'] = None
+    dWpt['lon'] = None
+    dWpt['name'] = None
+    dWpt['time'] = None
+    dWpt['type'] = "WPT"
+    dWpt['sym'] = "TRIANGLE"
+    return dWpt
+    
+tWptTag = ('name', 'time', 'type', 'sym')
+
+
 ##  Controler les 2 parametres de la ligne de commande
 if (len(sys.argv) != 3) :
     print("usage : " + sys.argv[0] + " dirAdh <fichier.sqlite> <fichier.gpx>", file=sys.stderr)
@@ -44,6 +62,7 @@ else :
 try :
     dbCnx = sqlite3.connect(dbFilename)
     print("Connexion a la DB")
+    dbCursor = dbCnx.cursor()
 except Exception as e:
     print("Erreur de connexion a la DB", e, file=sys.stderr)
     sys.exit()
@@ -78,15 +97,50 @@ except Exception as e:
     # print(elem)
 
 ##  https://docs.python.org/3.4/library/xml.etree.elementtree.html    
+##  https://docs.python.org/fr/2/library/xml.etree.elementtree.html
 from lxml import etree
-NSMAP = {"gpx": "http://www.topografix.com/GPX/1/1"}
 tree = etree.parse(gpxFilename)
-# for elem in tree.findall("gpx:wpt", namespaces=NSMAP):
-    # print(elem.tag, elem.attrib)   
+NSMAP = {"gpx": "http://www.topografix.com/GPX/1/1", "opencpn": "http://www.opencpn.org"}
+sqlInsertWpt = """INSERT INTO WPs
+(lat, lon, name, ts, sym, type)
+VALUES
+(?, ?, ?, ?, ?, ?)
+;
+"""
 
-    
-    
+for elem in tree.findall("gpx:wpt", namespaces=NSMAP):
+    dWpt = forge_dWpt()
+    tag = cleanNS(elem.tag)
+    dWpt['lat'] = elem.attrib['lat']
+    dWpt['lon'] = elem.attrib['lon']
+    # print(elem.tag, elem.attrib, "[" + tag + "]")
+    for i in elem :
+        t = cleanNS(i.tag)
+        if (i.text is not None and t in tWptTag) : 
+            dWpt[t] = i.text
+        # print(i.tag, i.attrib, i.text)
+        # if (i.tag == "{http://www.topografix.com/GPX/1/1}extensions") :
+            # for ext in i.findall("opencpn:*", namespaces=NSMAP) :
+                # print(ext.tag, ext.attrib, ext.text)
+    print(dWpt)   
+    try :
+        dbCursor.execute(sqlInsertWpt, (dWpt['lat'], dWpt['lon'], dWpt['name'], dWpt['time'], dWpt['sym'], dWpt['type']))
+        print("id :", dbCursor.lastrowid)
+        ## python dbCursor.lastrowid / SQL last_insert_rowid()
+        ##  https://stackoverflow.com/questions/6242756/how-to-retrieve-inserted-id-after-inserting-row-in-sqlite-using-python
+        dbCnx.commit()
+    except sqlite3.Error as err :
+        print("ERR: Pb insert", err)
+# import xml.etree.ElementTree as ET
+# tree = ET.parse(gpxFilename)
+# root = tree.getroot()
+# print(root.tag)
+# for elem in root.findall("{http://www.topografix.com/GPX/1/1}wpt") :
+    # print(elem.tag, elem.attrib)
+    # lat = elem.find("{http://www.topografix.com/GPX/1/1}name").text
+    # print(lat)
     
 # fGpx.close()
+dbCursor.close()
 dbCnx.close()
         
