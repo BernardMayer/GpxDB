@@ -123,6 +123,7 @@ for elem in tree.findall("gpx:wpt", namespaces=NSMAP):
             # for ext in i.findall("opencpn:*", namespaces=NSMAP) :
                 # print(ext.tag, ext.attrib, ext.text)
     print(dWpt)   
+    print(elem.to_xml())
     try :
         dbCursor.execute(sqlInsertWpt, (dWpt['lat'], dWpt['lon'], dWpt['name'], dWpt['time'], dWpt['sym'], dWpt['type']))
         print("id :", dbCursor.lastrowid)
